@@ -8,7 +8,7 @@ async def test_configs():
         auth = Auth(session, HOST, SECRET)
         resp = await auth.request("get", "configs")
         assert resp.status == 200
-        # print("HTTP response JSON content", await resp.text())
+        print("HTTP response JSON content", await resp.text())
 
 
 async def test_proxies():

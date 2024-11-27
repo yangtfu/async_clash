@@ -1,9 +1,10 @@
 [build-system]
-requires = ["hatchling", "aiohttp", "asyncio", "pytest", "pytest-asyncio"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "async_clash"
-version = "0.0.1"
+version = "0.0.2"
+dependencies = ["aiohttp", "asyncio", "pytest", "pytest-asyncio"]
 authors = [{ name = "ytf", email = "yangtfu@gmail.com" }]
 description = "Async api for clash."
 readme = "README.md"
