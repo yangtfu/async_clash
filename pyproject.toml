@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling", "aiohttp", "asyncio", "pytest", "pytest-asyncio"]
+build-backend = "hatchling.build"
+[project]
+name = "async_clash"
+version = "0.0.1"
+authors = [{ name = "ytf", email = "yangtfu@gmail.com" }]
+description = "Async api for clash."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/yangtfu/async_clash"
+Issues = "https://github.com/yangtfu/async_clash/issues"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+asyncio_mode = "auto"
